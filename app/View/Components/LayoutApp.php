@@ -8,12 +8,13 @@ use Illuminate\View\Component;
 
 class LayoutApp extends Component
 {
+    public $pageTitle;
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct($pageTitle = null)
     {
-        //
+        $this->pageTitle = $pageTitle;
     }
 
     /**
